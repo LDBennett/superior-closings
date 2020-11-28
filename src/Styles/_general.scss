@@ -23,6 +23,6 @@ a:not(.nav-link){
   color: $text-color;
   &:hover, &:focus{
     background-color: lighten($accent-color, 2);
-    color: darken($text-color, 10);
+    color: $text-color;
   }
 }

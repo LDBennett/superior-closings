@@ -3,6 +3,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Modal from 'react-bootstrap/Modal'
 import Image from 'react-bootstrap/Image'
+import { Slide, Fade } from "react-awesome-reveal"
 
 import Marino from './../../Assets/marino.jpg'
 
@@ -17,7 +18,7 @@ const About = () => {
     <>
     <Row id="about" className="light-section text-center my-5">
       <Col xs={12}>
-        <h2>About</h2>
+        <Slide triggerOnce><h2>About</h2></Slide>
       </Col>
       <Col xs={12}>
         <Image src={Marino} fluid rounded onClick={handleShow}/>
