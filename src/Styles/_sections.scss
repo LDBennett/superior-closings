@@ -1,0 +1,54 @@
+.dark-section{
+  background: $main-color;
+  color: $text-color;
+}
+.light-section{
+  background: $text-color;
+  color: $main-color;
+}
+
+#summary{
+  img{
+    height: 10rem;
+  }
+}
+
+#who-we-are{
+  h2{
+    font-weight: 700;
+  }
+}
+
+#services{
+  div:nth-child(3){
+    width: 100%;
+  }
+}
+
+#about{
+  h3{
+    width: 10rem;
+  }
+  img{
+    transition: filter .3s ease-in;
+    width: 10rem;
+    &:hover{
+      filter: brightness(.5);
+      +.about__name{
+        opacity: 1;
+        transform: translateY(-5rem);
+      }
+    }
+  }
+  .about__name{
+    opacity: 0;
+    transition: all .3s ease-in-out;
+    color: $text-color;
+  }
+}
+
+.footer{
+  &__bottom{
+    font-size: .75rem;
+  }
+}

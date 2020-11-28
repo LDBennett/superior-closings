@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import './Styles/main.scss';
+import Container from 'react-bootstrap/Container'
+import Header from './Components/Header'
+import Summary from './Components/Sections/Summary'
+import WhoWeAre from './Components/Sections/WhoWeAre'
+import Services from './Components/Sections/Services'
+import About from './Components/Sections/About'
+import Footer from './Components/Footer'
+
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { faDoorOpen, faLock } from '@fortawesome/free-solid-svg-icons'
+
+library.add(fab, faDoorOpen, faLock)
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main">
+      <Header />
+      <Container fluid>
+        <Summary/>
+        <WhoWeAre/>
+        <Services/>
+        <About/>
+      </Container>
+      <Footer/>
     </div>
-  );
+  )
 }
 
 export default App;

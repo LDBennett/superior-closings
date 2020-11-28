@@ -1,0 +1,28 @@
+$main-color: #062348;
+$accent-color: #f86124;
+$text-color: #f8f8ff;
+
+body{
+
+}
+
+a:not(.nav-link){
+  color: $accent-color;
+  text-decoration: none;
+  &:hover{
+    color: darken($accent-color,10);
+  }
+}
+.list-group-item.active{
+  color: inherit;
+  background-color: inherit;
+  border-color: inherit;
+}
+.services__list .list-group-item{
+  background-color: $accent-color;
+  color: $text-color;
+  &:hover, &:focus{
+    background-color: lighten($accent-color, 2);
+    color: darken($text-color, 10);
+  }
+}
