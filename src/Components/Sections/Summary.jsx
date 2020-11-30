@@ -11,7 +11,7 @@ const Summary = () => {
       <Col xs={12} md={4}>
         <Slide triggerOnce><Image src={Logo} className="mb-4" alt="Superior Closings Icon" fluid/></Slide>
       </Col>
-      <Col xs={12} md={8}>
+      <Col xs={12} md={8} className="d-flex align-items-center">
         <div className="text-md-left">
           <Slide triggerOnce cascade>
             <h2>Our Mission Statement</h2>

@@ -28,18 +28,18 @@ const Services = () => {
             <ListGroup.Item as="div" action>Foreclosure sales</ListGroup.Item>
             <ListGroup.Item as="div" action>Lot or Vacant land sales</ListGroup.Item>
             <ListGroup.Item as="div" action>Construction Loans</ListGroup.Item>
-            <em>*No Real Estate Agents, no problem, we can assist with for sale by owner as well*</em>
           </Slide>
+          <Fade><em>*No Real Estate Agents, no problem, we can assist with for sale by owner as well*</em></Fade>
         </ListGroup>
       </Col>
       <Col xs={{span: 12, order: 3}} className="text-center">
-        <Slide triggerOnce cascade>
+        <Fade triggerOnce cascade>
           <FontAwesomeIcon icon="door-open" size="5x" className="my-4"/>
           <p>We are a full service title company offering owners and lenders title insurance policies for all transactions.</p>
           <p>Questions regarding title insurance? <a href="">Click Here</a></p>
           <p>Need a quote for closing costs? <a href="">Click Here</a></p>
           <p><FontAwesomeIcon icon="lock" pull="left" /> We take cyber security seriously and protecting our customers private information is a top priority.  We are taking full advantage of technology to collect and deliver personal information during the process. This information is not shared and stored securley.</p>
-        </Slide>
+        </Fade>
       </Col>
     </Row>
   )

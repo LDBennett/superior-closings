@@ -29,6 +29,9 @@
     font-family: 'Nunito Sans', sans-serif;
     color: white;
     z-index: 99;
+    @include media-breakpoint-up(lg) {
+      height: 80vh;
+    }
     h1{
       font-weight: 900;
       @include media-breakpoint-up(sm) {
@@ -63,6 +66,9 @@
     width: 100vw;
     height: 60vh;
     filter: brightness(0.6);
+    @include media-breakpoint-up(lg) {
+      height: 80vh;
+    }
   }
   &__svg{
     width: 100%;

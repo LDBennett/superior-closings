@@ -9,9 +9,9 @@ import Footer from './Components/Footer'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faDoorOpen, faLock } from '@fortawesome/free-solid-svg-icons'
+import { faDoorOpen, faLock, faCheckCircle } from '@fortawesome/free-solid-svg-icons'
 
-library.add(fab, faDoorOpen, faLock)
+library.add(fab, faDoorOpen, faLock, faCheckCircle)
 
 function App() {
   return (

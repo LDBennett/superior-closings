@@ -32,6 +32,7 @@
   img{
     transition: filter .3s ease-in;
     width: 10rem;
+    cursor: pointer;
     &:hover{
       filter: brightness(.5);
       +.about__name{

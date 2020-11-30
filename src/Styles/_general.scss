@@ -26,3 +26,13 @@ a:not(.nav-link){
     color: $text-color;
   }
 }
+.modal-content{
+  border: 0;
+}
+.modal-header, .modal-footer{
+  background-color: $main-color;
+  color: $text-color;
+  .close{
+    color: $text-color;
+  }
+}
