@@ -6,16 +6,17 @@ import WhoWeAre from './Components/Sections/WhoWeAre'
 import Services from './Components/Sections/Services'
 import About from './Components/Sections/About'
 import Footer from './Components/Footer'
+import CovidUpdate from './Components/CovidUpdate'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faDoorOpen, faLock, faCheckCircle } from '@fortawesome/free-solid-svg-icons'
+import { faDoorOpen, faLock, faCheckCircle, faCircle, faDisease } from '@fortawesome/free-solid-svg-icons'
 
-library.add(fab, faDoorOpen, faLock, faCheckCircle)
+library.add(fab, faDoorOpen, faLock, faCheckCircle, faCircle, faDisease)
 
 function App() {
   return (
-    <div className="main">
+    <>
       <Header />
       <Container fluid>
         <Summary/>
@@ -24,7 +25,8 @@ function App() {
         <About/>
       </Container>
       <Footer/>
-    </div>
+      <CovidUpdate/>
+    </>
   )
 }
 

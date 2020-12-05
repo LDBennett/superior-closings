@@ -1,5 +1,6 @@
 $main-color: #062348;
 $accent-color: #f86124;
+$accent-color-2: #a5a6a5;
 $text-color: #f8f8ff;
 
 body{
@@ -34,5 +35,21 @@ a:not(.nav-link){
   color: $text-color;
   .close{
     color: $text-color;
+  }
+}
+
+.covid-update{
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  filter: drop-shadow(0px 0px 2px $accent-color-2);
+  svg[data-icon='circle']{
+    transition: all .5s ease-in-out;
+  }
+  &:hover{
+    svg[data-icon='circle']{
+      color: $accent-color;
+    }
   }
 }

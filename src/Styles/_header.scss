@@ -29,7 +29,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 60vh;
+    height: 65vh;
     width: 100%;
     font-family: 'Nunito Sans', sans-serif;
     color: white;
@@ -69,7 +69,7 @@
     z-index: -99;
     object-fit: cover;
     width: 100vw;
-    height: 60vh;
+    height: 65vh;
     filter: brightness(0.6);
     @include media-breakpoint-up(lg) {
       height: 80vh;
