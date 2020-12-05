@@ -1,3 +1,24 @@
+.section{
+  padding-left: 0;
+  padding-right: 0;
+  @include media-breakpoint-between(sm, md) {
+    padding-left: calc((100vw - 540px) / 2);
+    padding-right: calc((100vw - 540px) / 2);
+  }
+  @include media-breakpoint-between(md, lg) {
+    padding-left: calc((100vw - 720px) / 2);
+    padding-right: calc((100vw - 720px) / 2);
+  }
+  @include media-breakpoint-between(lg, xl) {
+    padding-left: calc((100vw - 960px) / 2);
+    padding-right: calc((100vw - 960px) / 2);
+  }
+  @include media-breakpoint-up(xl) {
+    padding-left: calc((100vw - 1140px) / 2);
+    padding-right: calc((100vw - 1140px) / 2);
+  }
+}
+
 .dark-section{
   background: $main-color;
   color: $text-color;
@@ -20,12 +41,41 @@
 }
 
 #services{
+  clip-path: polygon(0 3%, 100% 0, 100% 90%, 0 93%);
+  margin-top: -3rem;
+  padding-top: 3rem;
+  padding-bottom: 8rem;
+  @include media-breakpoint-up(sm) {
+    clip-path: polygon(0 5%, 100% 0, 100% 90%, 0 95%);
+    margin-top: -4rem;
+    padding-top: 5rem;
+    padding-bottom: 8rem;
+  }
+  @include media-breakpoint-up(md) {
+    clip-path: polygon(0 6%, 100% 0, 100% 90%, 0 97%);
+    margin-top: -3rem;
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+  }
+  @include media-breakpoint-up(lg) {
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+    margin-top: -1.5rem;
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+  }
+  @include media-breakpoint-up(xl) {
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+    margin-top: -3rem;
+    padding-top: 6rem;
+    padding-bottom: 5rem;
+  }
   div:nth-child(3){
     width: 100%;
   }
 }
 
 #about{
+  margin-top: -1rem;
   h3{
     width: 10rem;
   }

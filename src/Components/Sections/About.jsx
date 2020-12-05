@@ -2,7 +2,7 @@ import { useState } from 'react'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Image from 'react-bootstrap/Image'
-import { Slide, Fade } from "react-awesome-reveal"
+import { Slide } from "react-awesome-reveal"
 
 import CustomModal from './../CustomModal'
 
@@ -14,7 +14,7 @@ const About = () => {
 
   return(
     <>
-    <Row id="about" className="light-section text-center my-5">
+    <Row id="about" className="section light-section text-center mb-5">
       <Col xs={12}>
         <Slide triggerOnce><h2>About</h2></Slide>
       </Col>

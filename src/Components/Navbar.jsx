@@ -19,9 +19,13 @@ const Navigation = () => {
 
   const [show, setShow] = useState(false)
 
+  const NavLink = (props) => {
+    return ( <Link {...props}/> )
+  }
+
   return(
     <>
-    <Navbar bg="dark" variant="dark" expand="lg" fixed="top" className="p-4" >
+    <Navbar collapseOnSelect bg="dark" variant="dark" expand="lg" fixed="top" className="p-4" >
       <Navbar.Brand>
         <img
         src={Logo}
@@ -29,12 +33,12 @@ const Navigation = () => {
         height="30"
         className="d-inline-block align-top mr-2"
         alt="Superior Closings Icon"/>
-        Superior Closings
+        Superior Closing Services
       </Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Toggle aria-controls="navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav>
-          <Link
+          <NavLink
             className="nav-link"
             role="button"
             activeClass="active"
@@ -42,8 +46,8 @@ const Navigation = () => {
             spy={true}
             smooth={true}
             offset={-70}
-            duration={500}>Summary</Link>
-          <Link
+            duration={500}>Summary</NavLink>
+          <NavLink
             className="nav-link"
             role="button"
             activeClass="active"
@@ -51,8 +55,8 @@ const Navigation = () => {
             spy={true}
             smooth={true}
             offset={-70}
-            duration={500}>Who We Are</Link>
-          <Link
+            duration={500}>Who We Are</NavLink>
+          <NavLink
             className="nav-link"
             role="button"
             activeClass="active"
@@ -60,8 +64,8 @@ const Navigation = () => {
             spy={true}
             smooth={true}
             offset={-70}
-            duration={500}>Services</Link>
-          <Link
+            duration={500}>Services</NavLink>
+          <NavLink
             className="nav-link"
             role="button"
             activeClass="active"
@@ -69,11 +73,11 @@ const Navigation = () => {
             spy={true}
             smooth={true}
             offset={-70}
-            duration={500}>About</Link>
-          <Link
+            duration={500}>About</NavLink>
+          <span
             className="nav-link"
             role="button"
-            onClick={()=>setShow(true)}>FAQs</Link>
+            onClick={()=>setShow(true)}>FAQs</span>
         </Nav>
         <Button className="ml-auto" variant="outline-light">View My Docs</Button>
       </Navbar.Collapse>

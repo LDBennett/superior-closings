@@ -7,7 +7,7 @@ import Logo from './../../Assets/superior-closing-logo--icon-only.png'
 const Summary = () => {
 
   return(
-    <Row id="summary" className="dark-section text-center justify-content-center py-5">
+    <Row id="summary" className="section dark-section text-center justify-content-center py-5">
       <Col xs={12} md={4}>
         <Slide triggerOnce><Image src={Logo} className="mb-4" alt="Superior Closings Icon" fluid/></Slide>
       </Col>

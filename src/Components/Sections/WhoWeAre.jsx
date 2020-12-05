@@ -3,20 +3,20 @@ import Col from 'react-bootstrap/Col'
 import Image from 'react-bootstrap/Image'
 import { Slide } from "react-awesome-reveal";
 
-import City1 from './../../Assets/pittsburgh1.jpg'
-import Handshake from './../../Assets/handshake.jpg'
+import Group from './../../Assets/group-paperwork.jpg'
+import Door from './../../Assets/key-door.jpg'
 
 
 const WhoWeAre = () => {
 
   return(
 
-    <Row id="who-we-are" className="light-section my-5">
+    <Row id="who-we-are" className="section light-section my-5">
       <Col xs={12}>
         <Slide triggerOnce><h2>Who We Are</h2></Slide>
       </Col>
       <Col xs={12} md={4}>
-        <Slide triggerOnce><Image src={City1} className="my-2" alt="Pittsburgh City by Eilis Garvey" fluid rounded/></Slide>
+        <Slide triggerOnce><Image src={Group} className="my-2" alt="People looking at paperwork on a table by Sebastian Herrmann" fluid rounded/></Slide>
       </Col>
       <Col xs={12} md={8} className="align-self-center">
         <Slide triggerOnce>
@@ -24,7 +24,7 @@ const WhoWeAre = () => {
         </Slide>
       </Col>
       <Col xs={12} md={{span: 4, order: 2}}>
-        <Slide triggerOnce><Image src={Handshake} className="my-2" alt="Handshake photo by Constantin Wenning" fluid rounded/></Slide>
+        <Slide triggerOnce><Image src={Door} className="my-2" alt="Handshake photo by Constantin Wenning" fluid rounded/></Slide>
       </Col>
       <Col xs={12} md={{span: 8, order: 1}} className="align-self-center">
         <Slide triggerOnce><p>Our clients include real estate agents and brokers, loan officers and real estate investors.  We understand that they all have different needs and we cater to each of them.  We take pride in these relationships and helping them grow their business with their customers.  The service we offer to the customers of our clients is an extension of them and will help our clients obtain more referrals.</p></Slide>

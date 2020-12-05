@@ -13,7 +13,7 @@ const Services = () => {
 
 
   return(
-    <Row id="services" className="dark-section py-5">
+    <Row id="services" className="section dark-section">
       <Col xs={12}>
         <Slide triggerOnce><h2>Services</h2></Slide>
       </Col>
