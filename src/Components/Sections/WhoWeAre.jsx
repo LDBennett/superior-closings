@@ -3,7 +3,7 @@ import Col from 'react-bootstrap/Col'
 import Image from 'react-bootstrap/Image'
 import { Slide } from "react-awesome-reveal";
 
-import Group from './../../Assets/group-paperwork.jpg'
+import Group from './../../Assets/closing_photo.jpg'
 import Door from './../../Assets/key-door.jpg'
 
 

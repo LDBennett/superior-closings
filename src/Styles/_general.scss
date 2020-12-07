@@ -34,8 +34,12 @@ a:not(.nav-link){
     color: $text-color;
   }
 }
+
 .modal-content{
   border: 0;
+  .about-photo{
+    width: 250px;
+  }
 }
 .modal-header, .modal-footer{
   background-color: $main-color;
