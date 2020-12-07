@@ -20,14 +20,14 @@ const WhoWeAre = () => {
       </Col>
       <Col xs={12} md={8} className="align-self-center">
         <Slide triggerOnce>
-          <p>At <strong>Superior Closing Services</strong> we have many years of experience in the industry, but offer a fresh new outlook on the closing process.  We offer a broad variety of services to assist our clients through any closing process.  The streamlined process keeps our clients and their customers involved and up to date without overwhelming them.  We understand that buying, selling and refinancing can be stressful with many moving parts.  The part we control we want to be smooth and stress free.</p>
+          <p>At <strong>Superior Closing Services</strong> we have many years of experience in the industry, but offer a fresh new outlook on the closing process. We offer a broad variety of services to assist our clients through any closing process.  The streamlined process keeps our clients and their customers involved and up to date without overwhelming them.  We understand that buying, selling and refinancing can be stressful with many moving parts. We strive to ensure the closing process is as smooth and stress free as possible.</p>
         </Slide>
       </Col>
       <Col xs={12} md={{span: 4, order: 2}}>
         <Slide triggerOnce><Image src={Door} className="my-2" alt="Handshake photo by Constantin Wenning" fluid rounded/></Slide>
       </Col>
       <Col xs={12} md={{span: 8, order: 1}} className="align-self-center">
-        <Slide triggerOnce><p>Our clients include real estate agents and brokers, loan officers and real estate investors.  We understand that they all have different needs and we cater to each of them.  We take pride in these relationships and helping them grow their business with their customers.  The service we offer to the customers of our clients is an extension of them and will help our clients obtain more referrals.</p></Slide>
+        <Slide triggerOnce><p>Our clients include real estate agents and brokers, loan officers and real estate investors. We understand that they all have different needs and we carefully cater to each one of them. We take pride in our relationships and foster them to grow and expand their business with their customers. We know the service we offer to the customers of our clients is an extension of them and will help our clients obtain satisfied referrals.</p></Slide>
       </Col>
     </Row>
   )

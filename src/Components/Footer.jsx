@@ -25,7 +25,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer__bottom border-top d-flex justify-content-between col-12">
-        <span>© Copyright 2020 Superior Closings Services</span>
+        <span>© Copyright {new Date().getFullYear()} Superior Closings Services</span>
       </div>
     </footer>
   )

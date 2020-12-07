@@ -10,6 +10,13 @@ body{
 a:not(.nav-link){
   color: $accent-color;
   text-decoration: none;
+  &.btn{
+    border-color: $accent-color;
+    &:hover{
+      background: $accent-color;
+      color: $text-color;
+    }
+  }
   &:hover{
     color: darken($accent-color,10);
   }
