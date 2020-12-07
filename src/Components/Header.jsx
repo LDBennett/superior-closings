@@ -9,7 +9,7 @@ const Header = () => {
     return (
       <div className="background">
         <video className="background__video" autoPlay loop muted id="bgvid">
-          <source src="//staging.superiorclosings.com/assets/video_bg.mp4" />
+          <source src="https://superiorclosings.com/assets/video_bg.mp4" />
         </video>
       </div>
     )
