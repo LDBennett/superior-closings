@@ -26,7 +26,7 @@ const About = () => {
     <CustomModal show={show} handler={setShow}>
       <h2 className="text-center">Marino R. Harris, President</h2>
       <Image className="about-photo d-block mx-auto mb-2" src={Marino} fluid rounded/>
-      <p>With over 18 years of experience in the real estate industry, I understand the needs of buyers, sellers and the real estate professionals we work with, and my staff and I are dedicated to delivering a stress free and smooth closing process.  I am a Pittsburgh native and I understand our ever changing real estate market.  As demands change in our real estate market we promise to be at the forefront of our industry delivering the most secure, advanced and streamlined closing services.  </p>
+      <p>With over 18 years of experience in the real estate industry in Pittsburgh, I understand the needs of buyers, sellers and the real estate professionals we work with, and my staff and I are dedicated to delivering a stress free and smooth closing process. I am a Pittsburgh native and I understand our ever changing real estate market. As demands change in our real estate market we promise to be at the forefront of our industry delivering the most secure, advanced and streamlined closing services. </p>
     </CustomModal>
     </>
   )

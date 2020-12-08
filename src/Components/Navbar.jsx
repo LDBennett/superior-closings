@@ -19,8 +19,17 @@ const Navigation = () => {
 
   const [show, setShow] = useState(false)
 
-  const NavLink = (props) => {
-    return ( <Link {...props}/> )
+  const NavLink = ({to, children}) => {
+    return (
+      <Link
+        className="nav-link"
+        to={to}
+        role="button"
+        activeClass="active"
+        spy={true}
+        smooth='easeInOutQuint'
+        offset={-70}
+        duration={800}>{children}</Link> )
   }
 
   return(
@@ -38,42 +47,10 @@ const Navigation = () => {
       <Navbar.Toggle aria-controls="navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav>
-          <NavLink
-            className="nav-link"
-            role="button"
-            activeClass="active"
-            to="summary"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}>Summary</NavLink>
-          <NavLink
-            className="nav-link"
-            role="button"
-            activeClass="active"
-            to="who-we-are"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}>Who We Are</NavLink>
-          <NavLink
-            className="nav-link"
-            role="button"
-            activeClass="active"
-            to="services"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}>Services</NavLink>
-          <NavLink
-            className="nav-link"
-            role="button"
-            activeClass="active"
-            to="about"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}>About</NavLink>
+          <NavLink to="summary">Summary</NavLink>
+          <NavLink to="who-we-are">Who We Are</NavLink>
+          <NavLink to="services">Services</NavLink>
+          <NavLink to="about">About</NavLink>
           <span
             className="nav-link"
             role="button"

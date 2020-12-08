@@ -15,7 +15,7 @@ const Summary = () => {
         <div className="text-md-left">
           <Slide triggerOnce cascade>
             <h2>Our Mission Statement</h2>
-            <p>Our goal is to deliver the highest quality of service to our clients and their customers.  We guarantee that all parties involved in the transaction will have an exceptional experience.</p>
+            <p>Our goal is to deliver the highest quality of service to our clients and their customers throughout the Greater Pittsburgh Area.  We guarantee that all parties involved in the transaction will have an exceptional experience.</p>
           </Slide>
         </div>
       </Col>
