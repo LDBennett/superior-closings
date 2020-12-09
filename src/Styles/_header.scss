@@ -4,6 +4,33 @@
   background: $main-color;
   nav{
     z-index: 999;
+    transition: all .5s ease-out;
+    &.minified{
+      box-shadow: 0px 0px .25rem black;
+      padding: .25rem 2rem !important;
+      .navbar-brand{
+        width: 3rem;
+        transition: width .5s .5s ease-in;
+        &__text{
+          opacity: 0;
+          width: 0 !important;
+        }
+      }
+      .btn{
+        padding: .2rem .5rem;
+        font-size: .8rem;
+      }
+    }
+    .navbar-brand{
+      @include media-breakpoint-up(sm) {
+        width: 16.5rem;
+        transition: width .25s ease-in;
+      }
+      &__text{
+        opacity: 1;
+        transition: opacity .5s ease-in-out;
+      }
+    }
   }
   .navbar.bg-dark{
     background-color: $main-color !important;
@@ -21,6 +48,9 @@
   .navbar-toggler{
     padding: 0.15rem 0.35rem;
     font-size: 1rem;
+  }
+  .navbar-collapse{
+    padding-bottom: 1rem;
   }
   &__content{
     position: absolute;

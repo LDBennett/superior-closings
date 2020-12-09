@@ -1,7 +1,8 @@
 // import { Link, animateScroll as scroll } from "react-scroll";
-import { useState } from 'react'
-
-import { Link } from "react-scroll";
+import { useState, useEffect } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Link } from "react-scroll"
+import useScrollPosition from '@react-hook/window-scroll'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import Button from 'react-bootstrap/Button'
@@ -11,13 +12,14 @@ import Col from 'react-bootstrap/Col'
 
 import CustomModal from './CustomModal'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
 import Logo from './../Assets/superior-closing-logo--icon-only.png'
 
 const Navigation = () => {
 
   const [show, setShow] = useState(false)
+  const [miniNav, setMiniNav] = useState(false)
+  const [ expandedNav, setExpandedNav ] = useState(false)
+  const scrollY = useScrollPosition()
 
   const NavLink = ({to, children}) => {
     return (
@@ -28,13 +30,27 @@ const Navigation = () => {
         activeClass="active"
         spy={true}
         smooth='easeInOutQuint'
-        offset={-70}
-        duration={800}>{children}</Link> )
+        offset={-50}
+        duration={800}
+        onClick={handleNavClick}>{children}</Link> )
+  }
+
+  useEffect(()=>{
+    if (scrollY > 1){
+      setMiniNav(true)
+    }
+    else{
+      setMiniNav(false)
+    }
+  },[scrollY])
+
+  const handleNavClick = () => {
+    setExpandedNav(!expandedNav)
   }
 
   return(
     <>
-    <Navbar collapseOnSelect bg="dark" variant="dark" expand="lg" fixed="top" className="p-4" >
+    <Navbar expanded={expandedNav} onToggle={handleNavClick} bg="dark" variant="dark" expand="lg" fixed="top" className={`${miniNav ? 'minified' : ''} p-3`} >
       <Navbar.Brand>
         <img
         src={Logo}
@@ -42,10 +58,10 @@ const Navigation = () => {
         height="30"
         className="d-inline-block align-top mr-2"
         alt="Superior Closings Icon"/>
-        Superior Closing Services
+        <span className="navbar-brand__text">Superior Closing Services</span>
       </Navbar.Brand>
-      <Navbar.Toggle aria-controls="navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
+      <Navbar.Toggle aria-controls="navbar-nav b-0" />
+      <Navbar.Collapse className="pb-2 pb-lg-0" id="basic-navbar-nav">
         <Nav>
           <NavLink to="summary">Summary</NavLink>
           <NavLink to="who-we-are">Who We Are</NavLink>

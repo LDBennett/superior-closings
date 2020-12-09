@@ -17,24 +17,24 @@ const Services = () => {
       <Col xs={12}>
         <Slide triggerOnce><h2>Services</h2></Slide>
       </Col>
-      <Col xs={12} md={{span: 4 , order: 2}} className="align-self-center">
+      <Col xs={12} md={{span: 5 , order: 2}} className="align-self-center">
         <Fade triggerOnce><Image src={Suburbs} className="my-2" alt="Suburbs by Richard Horne" fluid rounded/></Fade>
       </Col>
-      <Col xs={12} md={{span: 8, order: 1}} className="align-self-center">
+      <Col xs={12} md={{span: 7, order: 1}}>
         <ListGroup className="services__list text-center" variant="flush">
           <Slide triggerOnce cascade>
-            <ListGroup.Item as="div" action>Residential Purchases and Refinances</ListGroup.Item>
-            <ListGroup.Item as="div" action>Commercial Purchases and Refinances</ListGroup.Item>
-            <ListGroup.Item as="div" action>Foreclosure sales</ListGroup.Item>
-            <ListGroup.Item as="div" action>Lot or Vacant land sales</ListGroup.Item>
-            <ListGroup.Item as="div" action>Construction Loans</ListGroup.Item>
+            <ListGroup.Item as="div" action className="my-1">Residential Purchases and Refinances</ListGroup.Item>
+            <ListGroup.Item as="div" action className="my-1">Commercial Purchases and Refinances</ListGroup.Item>
+            <ListGroup.Item as="div" action className="my-1">Foreclosure sales</ListGroup.Item>
+            <ListGroup.Item as="div" action className="my-1">Lot or Vacant land sales</ListGroup.Item>
+            <ListGroup.Item as="div" action className="my-1">Construction Loans</ListGroup.Item>
           </Slide>
           <Fade><em>*No Real Estate Agents, no problem, we can assist with for sale by owner as well*</em></Fade>
         </ListGroup>
       </Col>
       <Col xs={{span: 12, order: 3}} className="text-center">
         <Fade triggerOnce cascade>
-          <FontAwesomeIcon icon="door-open" size="5x" className="my-4"/>
+          <FontAwesomeIcon icon="door-open" size="7x" className="my-4"/>
           <p>We are a full service title company operating in the Greater Pittsburgh area offering owners and lenders title insurance policies for all transactions.</p>
           <p>Questions regarding title insurance? <a href="https://www.oldrepublictitle.com/homeowners" target="_blank" rel="noreferrer">Click Here</a></p>
           <p>Need a quote for closing costs? <a href="https://www.oldrepublictitle.com/rate-calculator/pennsylvania" target="_blank" rel="noreferrer">Click Here</a></p>

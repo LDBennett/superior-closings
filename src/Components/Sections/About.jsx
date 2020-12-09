@@ -14,7 +14,7 @@ const About = () => {
 
   return(
     <>
-    <Row id="about" className="section light-section text-center mb-5">
+    <Row id="about" className="section light-section text-center mb-5 mt-3">
       <Col xs={12}>
         <Slide triggerOnce><h2>About</h2></Slide>
       </Col>

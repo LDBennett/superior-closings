@@ -37,10 +37,15 @@
 #who-we-are{
   h2{
     font-weight: 700;
+    font-size: 2.5rem;
   }
 }
 
 #services{
+  h2{
+    font-weight: 700;
+    font-size: 2.5rem;
+  }
   clip-path: polygon(0 3%, 100% 0, 100% 90%, 0 93%);
   margin-top: -3rem;
   padding-top: 3rem;
@@ -76,6 +81,10 @@
 
 #about{
   margin-top: -1rem;
+  h2{
+    font-weight: 700;
+    font-size: 2.5rem;
+  }
   h3{
     width: 10rem;
   }
@@ -99,7 +108,15 @@
 }
 
 .footer{
+  h5{
+    font-weight: 700;
+    letter-spacing: .06rem;
+  }
   &__bottom{
     font-size: .75rem;
+  }
+  .list-group-item{
+    background: $text-color;
+    border-radius: 1rem;
   }
 }
