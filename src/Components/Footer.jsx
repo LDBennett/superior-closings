@@ -18,9 +18,10 @@ const Footer = () => {
         <h5 className="text-center">Follow Us</h5>
         <div className="d-flex justify-content-center my-3">
           <ButtonGroup aria-label="Social Icon Links">
-            <Button variant="secondary"><FontAwesomeIcon icon={['fab', 'facebook']} /></Button>
-            <Button variant="secondary"><FontAwesomeIcon icon={['fab', 'twitter']} /></Button>
-            <Button variant="secondary"><FontAwesomeIcon icon={['fab', 'youtube']} /></Button>
+            <Button variant="dark" disabled><FontAwesomeIcon icon={['fab', 'facebook']} /></Button>
+            <Button variant="dark" href="https://www.instagram.com/superiorclosingservices/" target="_blank"><FontAwesomeIcon icon={['fab', 'instagram']} /></Button>
+            <Button variant="dark" href="https://twitter.com/SuperiorCS_Pgh" target="_blank"><FontAwesomeIcon icon={['fab', 'twitter']} /></Button>
+            <Button variant="dark" disabled><FontAwesomeIcon icon={['fab', 'youtube']} /></Button>
           </ButtonGroup>
         </div>
       </div>
