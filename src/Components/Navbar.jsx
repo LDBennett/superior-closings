@@ -72,7 +72,9 @@ const Navigation = () => {
             role="button"
             onClick={()=>setShow(true)}>FAQs</span>
         </Nav>
-        <Button className="ml-auto" variant="outline-light" href="https://login.e-closingsecured.com/CompanyID/3Z9DNFED6Y" target="_blank">View My Docs</Button>
+        <a href="mailto:Marino@superiorclosings.com" className="ml-auto mr-3"><FontAwesomeIcon icon="envelope" color="#f86124"/></a>
+        <a href="tel:1-412-505-5199" className="mr-3"><FontAwesomeIcon icon="phone" color="#f86124"/></a>
+        <Button variant="outline-light" href="https://login.e-closingsecured.com/CompanyID/3Z9DNFED6Y" target="_blank">View My Docs</Button>
       </Navbar.Collapse>
     </Navbar>
     <CustomModal show={show} handler={setShow}>
