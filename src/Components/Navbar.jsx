@@ -62,7 +62,6 @@ const Navigation = () => {
 
   useEffect(()=>{
     if( size.width < 380){
-      console.log("TEST");
       setResourcesWidth(250)
     }
     else if( size.width < 992 ){
@@ -149,7 +148,7 @@ const Navigation = () => {
         <h3 className="text-center">Resources</h3>
         <hr/>
         <Row className="justify-content-center">
-          <ButtonGroup>
+          <ButtonGroup size={size.width < 991 ? "sm" : "md"} vertical={size.width < 460 ? true : false}>
             <Button onClick={changeResource} data-pdf="title">Title Flyer</Button>
             <Button onClick={changeResource} data-pdf="wire">Wire Fraud</Button>
             <Button onClick={changeResource} data-pdf="home-buying">Home Buying Process</Button>
@@ -157,7 +156,7 @@ const Navigation = () => {
           </ButtonGroup>
         </Row>
         <hr className="mx-5"/>
-        <Row className="justify-content-center" style={{minHeight: resourcesWidth <= 300 ? "400px" : 800}}>
+        <Row className="justify-content-center" style={{minHeight: resourcesWidth >= 250 ? "400px" : "800px"}}>
           <Document file={resourcesPDF} >
             <Page pageNumber={1} width={resourcesWidth}/>
           </Document>
