@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;900&family=Roboto&display=swap');
 
+$theme-colors: (
+  "primary": #f86124,
+);
+
 @import "~bootstrap/scss/bootstrap";
 
 @import "./../../node_modules/animate.css/animate.min.css";
