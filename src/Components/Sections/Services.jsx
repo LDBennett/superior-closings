@@ -37,7 +37,7 @@ const Services = () => {
           <FontAwesomeIcon icon="door-open" size="7x" className="my-4"/>
           <p>We are a full service title company operating in the Greater Pittsburgh area offering owners and lenders title insurance policies for all transactions.</p>
           <p>Questions regarding title insurance? <a href="https://www.oldrepublictitle.com/homeowners" target="_blank" rel="noreferrer">Click Here</a></p>
-          <p>Need a quote for closing costs? <a href="https://www.oldrepublictitle.com/rate-calculator/pennsylvania" target="_blank" rel="noreferrer">Click Here</a></p>
+          <p>Need a quote for closing costs? <a href="#" className="get-qualia-quote" onClick={(e)=>e.preventDefault()}>Click Here</a></p>
           <p><FontAwesomeIcon icon="lock" pull="left" /> We take cyber security seriously and protecting our customers private information is a top priority.  We are taking full advantage of technology to collect and deliver personal information during the process. This information is not shared and stored securley.</p>
         </Fade>
       </Col>
