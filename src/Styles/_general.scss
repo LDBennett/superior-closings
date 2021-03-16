@@ -33,6 +33,17 @@ a:not(.nav-link){
     color: darken($accent-color,10);
   }
 }
+
+.btn-link{
+  padding: 0;
+  &:focus{
+    box-shadow: none;
+  }
+  &:hover{
+    text-decoration: none;
+  }
+}
+
 .list-group-item.active{
   color: inherit;
   background-color: inherit;
