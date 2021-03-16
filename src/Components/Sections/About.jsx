@@ -54,11 +54,13 @@ const About = () => {
       </Col>
       {listStaff}
     </Row>
-    <CustomModal show={show} handler={setShow}>
-      <h2 className="text-center">{modalInfo.name} <small className="d-block">{modalInfo.title}</small></h2>
-      <Image className="about-photo d-block mx-auto mb-2" src={modalInfo.image} fluid rounded/>
-      <p>{modalInfo.bio}</p>
-    </CustomModal>
+    {modalInfo &&
+      <CustomModal show={show} handler={setShow}>
+        <h2 className="text-center">{modalInfo.name} <small className="d-block">{modalInfo.title}</small></h2>
+        <Image className="about-photo d-block mx-auto mb-2" src={modalInfo.image} fluid rounded/>
+        <p>{modalInfo.bio}</p>
+      </CustomModal>
+    }
     </>
   )
 }
