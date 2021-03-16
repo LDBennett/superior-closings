@@ -36,7 +36,6 @@ const About = () => {
   const setModal = ( info ) => {
     setShow(true)
     setModalInfo(info)
-    console.log(info);
   }
 
   const listStaff = staffInfo.map((member, key) => (
