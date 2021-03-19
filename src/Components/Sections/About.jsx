@@ -8,6 +8,7 @@ import CustomModal from './../CustomModal'
 
 import Marino from './../../Assets/marino.jpg'
 import David from './../../Assets/tintori_david.jpg'
+import Julia from './../../Assets/robb_julia.jpg'
 
 const About = () => {
 
@@ -30,6 +31,14 @@ const About = () => {
       image:    David,
       bio:    "",
       active: true,
+    },
+    {
+      id:     3,
+      name:   "Julia Robb",
+      title:  "Lead Processor",
+      image:    Julia,
+      bio:    "",
+      active: true,
     }
   ]
 
@@ -39,7 +48,7 @@ const About = () => {
   }
 
   const listStaff = staffInfo.map((member, key) => (
-    <Col xs={6} key={key}>
+    <Col xs={12} md={4}key={key}>
       <Image src={member.image} fluid rounded onClick={()=>setModal(member)}/>
       <h3 className="about__name mx-auto">{member.name}</h3>
     </Col>
