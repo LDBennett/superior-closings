@@ -29,6 +29,9 @@ const WhoWeAre = () => {
       <Col xs={12} md={{span: 8, order: 1}} className="align-self-center">
         <Slide triggerOnce><p>Our clients include real estate agents, real estate brokers, real estate investors, and loan officers in and around the City of Pittsburgh. We understand that they all have different needs and we carefully cater to each one of them. We take pride in our relationships and foster them to grow and expand their business with their customers. We know the service we offer to the customers of our clients is an extension of them and will help our clients obtain satisfied referrals.</p></Slide>
       </Col>
+      <Col xs={12} md={{span: 12, order: 3}} className="align-self-center">
+        <Slide triggerOnce><p>We use the industry leader in software <strong>Qualia</strong>. <br/><strong>Qualia</strong> is our secure, online title, escrow, and closing platform and is used by the top title and escrow companies in the country. It empowers us to provide our clients with around the clock real-time updates on the closing process, communicate through a secure mobile app, and provide a document storage portal for our clients to access and e-sign their documents on their own schedules.</p></Slide>
+      </Col>
     </Row>
   )
 }

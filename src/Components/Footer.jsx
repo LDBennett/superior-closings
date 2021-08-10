@@ -1,9 +1,11 @@
 import ListGroup from 'react-bootstrap/ListGroup'
 import ButtonGroup from 'react-bootstrap/ButtonGroup'
 import Button from 'react-bootstrap/Button'
+import Image from 'react-bootstrap/Image'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+import Verified from './../Assets/SI-Vetted-Verified 09 2020.jpg'
 
 const Footer = () => {
 
@@ -13,6 +15,7 @@ const Footer = () => {
       <ListGroup className="col-12 col-md-6 text-center text-md-left mb-4 mb-md-0">
         <h5>Title Insurance Underwriters</h5>
         <ListGroup.Item as="a" variant="light" href="https://www.oldrepublictitle.com/" target="_blank">Old Republic Title Insurance</ListGroup.Item>
+        <Image src={Verified} className="mt-3 ml-2" style={{width: "100px"}} alt="Secure Insight Seal" fluid />
       </ListGroup>
       <div className="col-12 col-md-6">
         <h5 className="text-center">Follow</h5>
