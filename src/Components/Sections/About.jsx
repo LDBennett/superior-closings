@@ -11,6 +11,7 @@ import David from './../../Assets/tintori_david.jpg'
 import Julia from './../../Assets/robb_julia.jpg'
 import Alejandro from './../../Assets/diaz_alejandro.jpg'
 import Christie from './../../Assets/stump_christie.jpg'
+import Eric from './../../Assets/snyder_eric.jpg'
 
 const About = () => {
 
@@ -55,6 +56,14 @@ const About = () => {
       name:   "Christie Stump",
       title:  "VP of Operations",
       image:   Christie,
+      bio:    "",
+      active: true,
+    },
+    {
+      id:     6,
+      name:   "Eric Snyder",
+      title:  "Lead Processor",
+      image:   Eric,
       bio:    "",
       active: true,
     }
