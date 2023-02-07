@@ -88,15 +88,18 @@
   h3{
     width: 10rem;
   }
-  img{
+  .about__image-container{
     transition: filter .3s ease-in;
     width: 10rem;
     cursor: pointer;
+    min-height: 220px;
+    background: rgba(236, 236, 236, .3);
+    box-shadow: 0 5px 5px rgb(0 0 0 / 0.2);
     &:hover{
       filter: brightness(.5);
       +.about__name{
         opacity: 1;
-        transform: translateY(-5rem);
+        transform: translateY(-8rem);
       }
     }
   }

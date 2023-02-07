@@ -79,7 +79,7 @@ const About = () => {
     },
     {
       id:     8,
-      name:   "Emily Fullerton",
+      name:   "Emily Fullerton Esq.",
       title:  "Chief Legal Counsel",
       image:   Emily,
       bio:    "",
@@ -94,7 +94,9 @@ const About = () => {
 
   const listStaff = staffInfo.map((member, key) => (
     <Col xs={12} sm={6} md={4} lg={3} key={key}>
-      <Image src={member.image} fluid rounded onClick={()=>setModal(member)}/>
+      <div className="about__image-container d-flex align-items-center mx-auto rounded">
+        <Image src={member.image} fluid onClick={() => setModal(member)} />
+      </div>
       <h3 className="about__name mx-auto">{member.name}</h3>
     </Col>
   ))
@@ -109,8 +111,8 @@ const About = () => {
     </Row>
     {modalInfo &&
       <CustomModal show={show} handler={setShow}>
-        <h2 className="text-center">{modalInfo.name} <small className="d-block">{modalInfo.title}</small></h2>
-        <Image className="about-photo d-block mx-auto mb-2" src={modalInfo.image} fluid rounded/>
+        <h2 className="text-center font-weight-bold">{modalInfo.name} <small className="d-block font-weight-light font-italic">{modalInfo.title}</small></h2>
+        <Image className="about-photo d-block mx-auto mb-2" src={modalInfo.image} fluid rounded />
         <p>{modalInfo.bio}</p>
       </CustomModal>
     }

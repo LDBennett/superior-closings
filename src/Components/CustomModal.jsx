@@ -6,11 +6,10 @@ const CustomModal = ({show, handler, size, children}) => {
 
   return (
     <Modal show={show} onHide={handleClose} centered size={size}>
-      <Modal.Header className="p-1 border-0" closeButton/>
-      <Modal.Body>
+      <Modal.Header className="border-0" closeButton/>
+      <Modal.Body className="pt-0 mb-5">
         {children}
       </Modal.Body>
-      <Modal.Footer/>
     </Modal>
   )
 }
