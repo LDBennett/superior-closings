@@ -14,7 +14,7 @@ const Footer = () => {
     <footer className="footer dark-section p-4 m-0 row">
       <ListGroup className="col-12 col-md-6 text-center text-md-left mb-4 mb-md-0">
         <h5>Title Insurance Underwriters</h5>
-        <ListGroup.Item as="a" variant="light" href="https://www.oldrepublictitle.com/" target="_blank">Old Republic Title Insurance</ListGroup.Item>
+        <ListGroup.Item as="a" variant="light" href="https://nationalagency.fnf.com/pa/fntic/" target="_blank">Fidelity National Title</ListGroup.Item>
         <Image src={Verified} className="mt-3 ml-2" style={{width: "100px"}} alt="Secure Insight Seal" fluid />
       </ListGroup>
       <div className="col-12 col-md-6">
@@ -28,7 +28,7 @@ const Footer = () => {
         </div>
         <h5 className="text-center">Contact</h5>
         <div className="text-center">
-          <p className="my-1">PO Box 44129, Pittsburgh, PA 15205</p>
+          <p className="my-1">233 1/2 Spahr St, Pittsburgh, PA 15232</p>
           <p className="my-1"><a href="mailto:Marino@superiorclosings.com">Marino@superiorclosings.com</a></p>
           <p className="my-1"><a href="tel:1-412-505-5199">412-505-5199</a></p>
         </div>

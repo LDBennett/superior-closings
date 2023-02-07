@@ -13,6 +13,7 @@ import Alejandro from './../../Assets/diaz_alejandro.jpg'
 import Christie from './../../Assets/stump_christie.jpg'
 import Eric from './../../Assets/snyder_eric.jpg'
 import Kelli from './../../Assets/didden_kelli.jpg'
+import Emily from './../../Assets/fullerton_emily.jpg';
 
 const About = () => {
 
@@ -75,7 +76,15 @@ const About = () => {
       image:   Kelli,
       bio:    "",
       active: true,
-    }
+    },
+    {
+      id:     8,
+      name:   "Emily Fullerton",
+      title:  "Chief Legal Counsel",
+      image:   Emily,
+      bio:    "",
+      active: true,
+    },
   ]
 
   const setModal = ( info ) => {
