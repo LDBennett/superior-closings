@@ -113,7 +113,7 @@ const About = () => {
       <CustomModal show={show} handler={setShow}>
         <h2 className="text-center font-weight-bold">{modalInfo.name} <small className="d-block font-weight-light font-italic">{modalInfo.title}</small></h2>
         <Image className="about-photo d-block mx-auto mb-2" src={modalInfo.image} fluid rounded />
-        <p>{modalInfo.bio}</p>
+        <p className="pt-4 px-5">{modalInfo.bio}</p>
       </CustomModal>
     }
     </>
