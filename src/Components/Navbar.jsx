@@ -121,8 +121,8 @@ const Navigation = () => {
         <a href="tel:1-412-505-5199" className="mr-3"><FontAwesomeIcon icon="phone" color="#f86124"/></a>
       </Navbar.Collapse>
     </Navbar>
-    <CustomModal show={faqs} handler={setFaqs}>
-        <h3 className="text-center">What Do I Need For Closing?</h3>
+    <CustomModal show={faqs} handler={setFaqs} size="lg">
+        <h3 className="text-center ">What Do I Need For Closing?</h3>
         <hr/>
         <Row>
           <Col xs={12} sm={6}>

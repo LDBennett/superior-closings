@@ -10,9 +10,9 @@ import CovidUpdate from './Components/CovidUpdate'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faDoorOpen, faLock, faCheckCircle, faCircle, faDisease, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faDoorOpen, faLock, faCheckCircle, faCircle, faDisease, faPhone, faEnvelope, faInfoCircle} from '@fortawesome/free-solid-svg-icons'
 
-library.add(fab, faDoorOpen, faLock, faCheckCircle, faCircle, faDisease, faPhone, faEnvelope)
+library.add(fab, faDoorOpen, faLock, faCheckCircle, faCircle, faDisease, faPhone, faEnvelope, faInfoCircle)
 
 function App() {
   return (

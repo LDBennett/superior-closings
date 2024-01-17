@@ -90,25 +90,17 @@
   }
   .about__image-container{
     transition: filter .3s ease-in;
-    width: 10rem;
-    cursor: pointer;
     min-height: 220px;
-    background: rgba(236, 236, 236, .3);
+  }
+  .about__image{
+    border-radius: .5rem;
     box-shadow: 0 5px 5px rgb(0 0 0 / 0.2);
-    &:hover{
-      filter: brightness(.5);
-      +.about__name{
-        opacity: 1;
-        transform: translateY(-8rem);
-      }
-    }
+    width: 10rem;
   }
-  .about__name{
-    opacity: 0;
-    transition: all .3s ease-in-out;
-    color: $text-color;
-    pointer-events: none;
+  .about__email{
+    color: $main-color;
   }
+
 }
 
 .footer{

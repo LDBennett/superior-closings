@@ -3,6 +3,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Image from 'react-bootstrap/Image'
 import { Slide } from "react-awesome-reveal"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import CustomModal from './../CustomModal'
 
@@ -28,6 +29,7 @@ const About = () => {
       image:  Marino,
       bio:    "With over 18 years of experience in the real estate industry in Pittsburgh, I understand the needs of buyers, sellers and the real estate professionals we work with, and my staff and I are dedicated to delivering a stress free and smooth closing process. I am a Pittsburgh native and I understand our ever changing real estate market. As demands change in our real estate market we promise to be at the forefront of our industry delivering the most secure, advanced and streamlined closing services.",
       active: true,
+      email: "Marino@superiorclosings.com"
     },
     {
       id:     2,
@@ -36,6 +38,7 @@ const About = () => {
       image:    David,
       bio:    "",
       active: true,
+      email: "David@superiorclosings.com"
     },
     {
       id:     3,
@@ -44,6 +47,7 @@ const About = () => {
       image:    Julia,
       bio:    "",
       active: true,
+      email: "Julia@superiorclosings.com"
     },
     {
       id:     4,
@@ -52,6 +56,7 @@ const About = () => {
       image:   Alejandro,
       bio:    "",
       active: true,
+      email: "Alejandro@superiorclosings.com"
     },
     {
       id:     5,
@@ -60,6 +65,7 @@ const About = () => {
       image:   Christie,
       bio:    "",
       active: true,
+      email: "Christie@superiorclosings.com"
     },
     {
       id:     6,
@@ -68,6 +74,7 @@ const About = () => {
       image:   Eric,
       bio:    "",
       active: true,
+      email: "Eric@superiorclosings.com"
     },
     {
       id:     7,
@@ -76,6 +83,7 @@ const About = () => {
       image:   Kelli,
       bio:    "",
       active: true,
+      email: "Kelli@superiorclosings.com"
     },
     {
       id:     8,
@@ -84,6 +92,7 @@ const About = () => {
       image:   Emily,
       bio:    "",
       active: true,
+      email: "Emily@superiorclosings.com"
     },
   ]
 
@@ -94,10 +103,15 @@ const About = () => {
 
   const listStaff = staffInfo.map((member, key) => (
     <Col xs={12} sm={6} md={4} lg={3} key={key}>
-      <div className="about__image-container d-flex align-items-center mx-auto rounded">
-        <Image src={member.image} fluid onClick={() => setModal(member)} />
+      <div className="about__image-container d-flex align-items-end rounded">
+        <Image src={member.image} fluid className={`about__image d-block mx-auto`}/>
       </div>
-      <h3 className="about__name mx-auto">{member.name}</h3>
+      <div className="about__email text-center mt-2 mb-3">
+        <span className="ml-2 font-weight-bold">{member.name}</span>
+        <small className="d-block font-weight-light font-italic">{member.title}</small>
+        <a href={`mailto:${member.email}`}><FontAwesomeIcon icon="envelope" color="#062348" /></a>
+        {member.bio && <FontAwesomeIcon icon="info-circle" color="#062348" className="ml-3 cursor-pointer" onClick={() =>setModal(member)}/> }
+      </div>
     </Col>
   ))
 
@@ -114,6 +128,9 @@ const About = () => {
         <h2 className="text-center font-weight-bold">{modalInfo.name} <small className="d-block font-weight-light font-italic">{modalInfo.title}</small></h2>
         <Image className="about-photo d-block mx-auto mb-2" src={modalInfo.image} fluid rounded />
         <p className="pt-4 px-5">{modalInfo.bio}</p>
+        <div className="about__email text-center mt-2 mb-3">
+          <FontAwesomeIcon icon="envelope" color="#062348" /><span className="ml-2 font-weight-bold">{modalInfo.email}</span>
+        </div>
       </CustomModal>
     }
     </>
