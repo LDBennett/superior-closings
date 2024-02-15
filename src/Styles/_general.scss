@@ -38,6 +38,10 @@ a:not(.nav-link){
   cursor: pointer;
 }
 
+.fw-600{
+  font-weight: 600;
+}
+
 .btn-link{
   padding: 0;
   &:focus{

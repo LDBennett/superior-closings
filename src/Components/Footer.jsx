@@ -12,11 +12,11 @@ const Footer = () => {
 
   return(
     <footer className="footer dark-section p-4 m-0 row">
-      <ListGroup className="col-12 col-md-6 text-center text-md-left mb-4 mb-md-0">
+      <div className='flex-fill'>
         <h5>Title Insurance Underwriters</h5>
-        <ListGroup.Item as="a" variant="light" href="https://nationalagency.fnf.com/pa/fntic/" target="_blank">Fidelity National Title</ListGroup.Item>
-        <Image src={Verified} className="mt-3 ml-2" style={{width: "100px"}} alt="Secure Insight Seal" fluid />
-      </ListGroup>
+        <Button variant="light" href="https://nationalagency.fnf.com/pa/fntic/" target="_blank" className="px-4 py-2 rounded-lg cursor-pointer fw-600">Fidelity National Title</Button>
+        <Image src={Verified} className="mt-3 d-block bg-light p-2 rounded-lg" style={{ width: "130px" }} alt="Secure Insight Seal" fluid />
+      </div>
       <div className="col-12 col-md-6">
         <h5 className="text-center">Follow</h5>
         <div className="d-flex justify-content-center my-3">

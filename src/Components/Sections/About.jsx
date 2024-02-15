@@ -7,14 +7,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import CustomModal from './../CustomModal'
 
-import Marino from './../../Assets/marino.jpg'
-import David from './../../Assets/tintori_david.jpg'
-import Julia from './../../Assets/robb_julia.jpg'
-import Alejandro from './../../Assets/diaz_alejandro.jpg'
-import Christie from './../../Assets/stump_christie.jpg'
-import Eric from './../../Assets/snyder_eric.jpg'
-import Kelli from './../../Assets/didden_kelli.jpg'
-import Emily from './../../Assets/fullerton_emily.jpg';
+import Marino from './../../Assets/2024/resized/Marino.jpg'
+import David from './../../Assets/2024/Dave.jpg'
+import Julia from './../../Assets/2024/Julia.jpg'
+import Alejandro from './../../Assets/2024/Alejandro.jpg'
+import Christie from './../../Assets/stump_christie--resized.jpg'
+import Eric from './../../Assets/snyder_eric--resized.jpg'
+import Kelli from './../../Assets/2024/Kelly.jpg'
+import Emily from './../../Assets/2024/Emily.jpg';
+import Gabby from './../../Assets/2024/Gabby.jpg';
+import Lauren from './../../Assets/2024/Lauren.jpg'
 
 const About = () => {
 
@@ -94,6 +96,25 @@ const About = () => {
       active: true,
       email: "Emily@superiorclosings.com"
     },
+    {
+      id:     9,
+      name:   "Gabrielle Moore",
+      title:  "Post Closing Manager",
+      image:   Gabby,
+      bio:    "",
+      active: true,
+      email: "Gabrielle@superiorclosings.com"
+    },
+    {
+      id:     10,
+      name:   "Lauren Wurzbacher",
+      title:  "Lead Processor",
+      image: Lauren,
+      bio:    "",
+      active: true,
+      email: "Lauren@superiorclosings.com"
+    },
+    
   ]
 
   const setModal = ( info ) => {
