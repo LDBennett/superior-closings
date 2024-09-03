@@ -17,6 +17,7 @@ import Kelli from './../../Assets/2024/Kelly.jpg'
 import Emily from './../../Assets/2024/Emily.jpg';
 import Gabby from './../../Assets/2024/Gabby.jpg';
 import Lauren from './../../Assets/2024/Lauren.jpg'
+import Jamie from './../../Assets/2024/Jamie.jpg'
 
 const About = () => {
 
@@ -114,7 +115,15 @@ const About = () => {
       active: true,
       email: "Lauren@superiorclosings.com"
     },
-    
+    {
+      id: 11,
+      name: "Jamie Gaffney",
+      title: "Lead Processor",
+      image: Jamie,
+      bio: "",
+      active: true,
+      email: "Jamie@superiorclosings.com"
+    },
   ]
 
   const setModal = ( info ) => {
