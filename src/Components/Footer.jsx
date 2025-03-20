@@ -28,7 +28,7 @@ const Footer = () => {
         <h5 className="text-center">Contact</h5>
         <div className="text-center">
           <p className="my-1">233 1/2 Spahr St, Pittsburgh, PA 15232</p>
-          <p className="my-1"><a href="mailto:Marino@superiorclosings.com">Marino@superiorclosings.com</a></p>
+          <p className="my-1"><a href="mailto:info@superiorclosings.com">info@superiorclosings.com</a></p>
           <p className="my-1"><a href="tel:1-412-505-5199">412-505-5199</a></p>
         </div>
       </div>

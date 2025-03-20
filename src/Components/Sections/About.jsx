@@ -7,17 +7,18 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import CustomModal from './../CustomModal'
 
-import Marino from './../../Assets/2024/resized/Marino.jpg'
-import David from './../../Assets/2024/Dave.jpg'
-import Julia from './../../Assets/2024/Julia.jpg'
-import Alejandro from './../../Assets/2024/Alejandro.jpg'
-import Christie from './../../Assets/stump_christie--resized.jpg'
-import Eric from './../../Assets/snyder_eric--resized.jpg'
-import Kelli from './../../Assets/2024/Kelly.jpg'
-import Emily from './../../Assets/2024/Emily.jpg';
-import Gabby from './../../Assets/2024/Gabby.jpg';
-import Lauren from './../../Assets/2024/Lauren.jpg'
-import Jamie from './../../Assets/2024/Jamie.jpg'
+import Marino from './../../Assets/EmployeePhotos/Marino.jpg'
+import David from './../../Assets/EmployeePhotos/Dave.jpg'
+import Julia from './../../Assets/EmployeePhotos/Julia.jpg'
+import Alejandro from './../../Assets/EmployeePhotos/Alejandro.jpg'
+import Christie from './../../Assets/EmployeePhotos/Christie.jpg'
+import Eric from './../../Assets/EmployeePhotos/Eric.jpg'
+import Kelli from './../../Assets/EmployeePhotos/Kelly.jpg'
+import Emily from './../../Assets/EmployeePhotos/Emily.jpg';
+import Gabby from './../../Assets/EmployeePhotos/Gabby.jpg';
+import Lauren from './../../Assets/EmployeePhotos/Lauren.jpg'
+import Jamie from './../../Assets/EmployeePhotos/Jamie.jpg'
+import Michelle from './../../Assets/EmployeePhotos/Michelle.jpg'
 
 const About = () => {
 
@@ -124,6 +125,15 @@ const About = () => {
       active: true,
       email: "Jamie@superiorclosings.com"
     },
+    {
+      id: 12,
+      name: "Michelle Dukes",
+      title: "Operations Manager",
+      image: Michelle,
+      bio: "",
+      active: true,
+      email: "Michelle@superiorclosings.com"
+    }
   ]
 
   const setModal = ( info ) => {

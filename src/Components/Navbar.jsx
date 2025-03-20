@@ -117,7 +117,7 @@ const Navigation = () => {
             role="button"
             onClick={()=>setResources(true)}>Resources</span>
         </Nav>
-        <a href="mailto:Marino@superiorclosings.com" className="ml-auto mr-3"><FontAwesomeIcon icon="envelope" color="#f86124"/></a>
+          <a href="mailto:info@superiorclosings.com" className="ml-auto mr-3"><FontAwesomeIcon icon="envelope" color="#f86124"/></a>
         <a href="tel:1-412-505-5199" className="mr-3"><FontAwesomeIcon icon="phone" color="#f86124"/></a>
       </Navbar.Collapse>
     </Navbar>
