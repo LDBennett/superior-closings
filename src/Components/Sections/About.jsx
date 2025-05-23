@@ -77,7 +77,7 @@ const About = () => {
       title:  "Lead Processor",
       image:   Eric,
       bio:    "",
-      active: true,
+      active: false,
       email: "Eric@superiorclosings.com"
     },
     {
@@ -142,17 +142,18 @@ const About = () => {
   }
 
   const listStaff = staffInfo.map((member, key) => (
-    <Col xs={12} sm={6} md={4} lg={3} key={key}>
+    member.active && (<Col xs={12} sm={6} md={4} lg={3} key={key}>
       <div className="about__image-container d-flex align-items-end rounded">
-        <Image src={member.image} fluid className={`about__image d-block mx-auto`}/>
+        <Image src={member.image} fluid className={`about__image d-block mx-auto`} />
       </div>
       <div className="about__email text-center mt-2 mb-3">
         <span className="ml-2 font-weight-bold">{member.name}</span>
         <small className="d-block font-weight-light font-italic">{member.title}</small>
         <a href={`mailto:${member.email}`}><FontAwesomeIcon icon="envelope" color="#062348" /></a>
-        {member.bio && <FontAwesomeIcon icon="info-circle" color="#062348" className="ml-3 cursor-pointer" onClick={() =>setModal(member)}/> }
+        {member.bio && <FontAwesomeIcon icon="info-circle" color="#062348" className="ml-3 cursor-pointer" onClick={() => setModal(member)} />}
       </div>
-    </Col>
+    </Col>)
+
   ))
 
   return(
