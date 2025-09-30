@@ -19,6 +19,7 @@ import Gabby from './../../Assets/EmployeePhotos/Gabby.jpg';
 import Lauren from './../../Assets/EmployeePhotos/Lauren.jpg'
 import Jamie from './../../Assets/EmployeePhotos/Jamie.jpg'
 import Michelle from './../../Assets/EmployeePhotos/Michelle.jpg'
+import Nicolette from './../../Assets/EmployeePhotos/Nicolette.jpg'
 
 const About = () => {
 
@@ -133,6 +134,15 @@ const About = () => {
       bio: "",
       active: true,
       email: "Michelle@superiorclosings.com"
+    },
+    {
+      id: 13,
+      name: "Nicolette Sellitti",
+      title: "Closing Attorney",
+      image: Nicolette,
+      bio: "",
+      active: true,
+      email: "Nicolette@superiorclosings.com"
     }
   ]
 
