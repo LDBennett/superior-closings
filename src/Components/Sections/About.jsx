@@ -20,6 +20,7 @@ import Lauren from './../../Assets/EmployeePhotos/Lauren.jpg'
 import Jamie from './../../Assets/EmployeePhotos/Jamie.jpg'
 import Michelle from './../../Assets/EmployeePhotos/Michelle.jpg'
 import Nicolette from './../../Assets/EmployeePhotos/Nicolette.jpg'
+import Leah from './../../Assets/EmployeePhotos/Leah.png'
 
 const About = () => {
 
@@ -143,6 +144,15 @@ const About = () => {
       bio: "",
       active: true,
       email: "Nicolette@superiorclosings.com"
+    },
+    {
+      id: 14,
+      name: "Leah Harlan",
+      title: "Lead Processor",
+      image: Leah,
+      bio: "",
+      active: true,
+      email: " Leah@superiorclosings.com"
     }
   ]
 
